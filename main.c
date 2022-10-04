@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
 	int num;
 	
-	printf("정수 하나를 입력하시 :");오 
+	printf("정수 하나를 입력하시 :");
 	scanf("%i ",&num);	
 
 	if(num >= 0)
