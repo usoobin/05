@@ -5,21 +5,22 @@
 
 int main(int argc, char *argv[]) 
 {
-	char c;
-	int cnt =0;
+	int sum=0;
+	int num;
+	int a = 0;
+	int i;
 	
-	printf("input a string:");
+	printf("input a number:");
+	scanf("%d",&num);
 	
-	while((c=getchar())!= '\n') //입력 문자가 개형문자가 나올때까지 반복  
-	{  //만약 입력된 숫자인가? 참-> 그렇다면 count가 한개 증가 
-		if(c >= '0' && c <='9' )
-	 	{
-	 		cnt = cnt + 1;
-	 	}
-		//이 구간이 반복 
-	};
+	for(i=1; i<=num; i++)
+	{
 	
-	printf("the number of digit is %i",cnt);
+		sum = sum + i;
+	}
+	
+	
+	printf("the number of digit is %i",sum);
 	
 	return 0;
 }
