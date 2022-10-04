@@ -6,24 +6,37 @@
 int main(int argc, char *argv[]) 
 {
 	
+	int a,b;
+	char oper;
 	int num;
-	printf("정수 하나를 입력하시오:");
-	scanf("%d",&num);
+
+	printf("enter the calculation :");
+	scanf("%i %c %i",&a,&oper,&b);	
 	
-	
-	if(num >= 0)
+	if(oper == '+')
 	{
-		printf("절대값은 %d입니다",num);
-	}
-	
-	else 
-	{
-		printf("절대값은 %d입니다",num*-1);
+		printf("=%i\n",a+b);
 	}
 
+	else if(oper == '-')
+	{
+		printf("=%i\n",a-b);
+	}
 
-	
-	
+	else if(oper == '*')
+	{
+		printf("=%i\n",a*b);
+	}
+
+	else if(oper == '/')
+	{
+		printf("=%i\n",a/b);
+	}
+
+	else if(oper == '%')
+	{
+		printf("=%i\n",a%b);
+	}
 	
 	
 	return 0;
