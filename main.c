@@ -5,36 +5,20 @@
 
 int main(int argc, char *argv[]) 
 {
-	int a,b;
-	char oper;
+	int num;
 	
-	printf("enter the calculation :");
-	scanf("%i %c %i",&a,&oper,&b);	
+	printf("정수 하나를 입력하시 :");오 
+	scanf("%i ",&num);	
 
-	if(oper == '+')
+	if(num >= 0)
 	{
-		printf("=%i\n",a+b);
-	}
-
-	else if(oper == '-')
-	{
-		printf("=%i\n",a-b);
+		printf("절대값은 %d입니다",num);
 	}
 	
-	else if(oper == '*')
+	else 
 	{
-		printf("=%i\n",a*b);
-	}
-
-	else if(oper == '/')
-	{
-		printf("=%i\n",a/b);
-	}
-	
-	else if(oper == '%')
-	{
-		printf("=%i\n",a%b);
-	}
+		printf("절대값은 %d입니다",num*-1);
+	} 
 
 	return 0;
 }
