@@ -3,28 +3,38 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(void)
+int main(int argc, char *argv[]) 
 {
-	int i,num;
-	int sum =0;
+	int a,b;
+	char oper;
 	
-	printf("input a number:");
-	//scanf("%d",&num);
-	
-	
-	for(i=1; i<= 4; i++)
+	printf("enter the calculation :");
+	scanf("%i %c %i",&a,&oper,&b);	
+
+	if(oper == '+')
 	{
-		sum = i+sum;
-	
+		printf("=%i\n",a+b);
+	}
+
+	else if(oper == '-')
+	{
+		printf("=%i\n",a-b);
 	}
 	
-		printf("THE RESULT IS %d",&sum);
+	else if(oper == '*')
+	{
+		printf("=%i\n",a*b);
+	}
 
+	else if(oper == '/')
+	{
+		printf("=%i\n",a/b);
+	}
 	
-	
-	
+	else if(oper == '%')
+	{
+		printf("=%i\n",a%b);
+	}
+
 	return 0;
-	
-	
-	
 }
