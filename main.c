@@ -11,20 +11,17 @@ int main(void)
 	scanf("%d",&num);
 	
 	
-	if(num > 0)
+	if(num >= 0)
 	{
-		printf("양수입니다.");
+		printf("절대값은 %d입니다",num);
 	}
 	
-	else if(num < 0)
+	else 
 	{
-		printf("음수입니다.");
+		printf("절대값은 %d입니다",num*-1);
 	} 
 	
-	else
-	{
-		printf("0입니다");
-	 } 
+
 	
 	
 	
