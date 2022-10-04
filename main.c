@@ -5,21 +5,21 @@
 
 int main(int argc, char *argv[]) 
 {
-	int sum=0;
-	int num;
-	int i;
 	
-	printf("input a number:");
-	scanf("%d",&num);
 	
-	for(i=1; i<=num; i++)
+
+	switch(op)
 	{
+		case '+' 
+		: 	sum = x+y;
+			break;
 	
-		sum = sum + i;
+		case '-' 
+		:	sum = a-b;
+			break;
+			
+				
 	}
-	
-	
-	printf("the number of digit is %i",sum);
 	
 	return 0;
 }
