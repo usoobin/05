@@ -5,22 +5,20 @@
 
 int main(void)
 {
-	int num;
+	int i,num;
+	int sum =0;
 	
-	printf("정수 하나를 입력하시요.");
-	scanf("%d",&num);
+	printf("input a number:");
+	//scanf("%d",&num);
 	
 	
-	if(num >= 0)
+	for(i=1; i<= 4; i++)
 	{
-		printf("절대값은 %d입니다",num);
+		sum = i+sum;
+	
 	}
 	
-	else 
-	{
-		printf("절대값은 %d입니다",num*-1);
-	} 
-	
+		printf("THE RESULT IS %d",&sum);
 
 	
 	
